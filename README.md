@@ -1,53 +1,133 @@
 # Customer Retention Prediction
 
-## Overview
-Machine Learning project to predict whether a customer will return to an e-commerce platform.
+![Python](https://img.shields.io/badge/Python-Programming-blue)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-orange)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
 
-> Note: The analysis notebook is written in Spanish, as this project was developed for an academic context in Mexico.
+Machine learning project developed to predict whether a customer will return to an e-commerce platform.
+
+Created by [Karla Roman](https://github.com/karla-roman)
+
+---
+
+## Project Overview
+
+Customer retention is an important business metric because keeping existing customers is usually less expensive than acquiring new ones.
+
+The goal of this project was to prepare customer data, train different machine learning models, and compare their performance to predict customer retention.
+
+---
 
 ## Dataset
-The dataset includes customer-related variables such as:
-- Age
-- Spending
-- Marketing interaction
-- Gender
 
-These features are used to analyze customer behavior and predict retention.
+The dataset contains customer information used to predict whether a customer will return.
 
-## Workflow
-1. Data exploration  
-2. Data visualization  
-3. Data preprocessing  
-   - Encoding categorical variables  
-   - Feature scaling  
-4. Model training  
-   - Logistic Regression  
-   - Decision Tree  
-   - Random Forest  
-5. Model evaluation  
-6. Hyperparameter tuning (GridSearchCV)
+| Attribute | Description |
+|-----------|-------------|
+| `age` | Customer age |
+| `total_spent` | Customer spending |
+| `marketing_engaged` | Customer response to marketing campaigns |
+| `gender` | Customer gender |
+
+> **Note:** The analysis notebook is written in Spanish because this project was developed for an academic context in Mexico.
+
+---
+
+## Solution Workflow
+
+```text
+Dataset
+    │
+    ▼
+Data Exploration
+    │
+    ▼
+Data Preprocessing
+    │
+    ├── Encoding
+    └── Feature Scaling
+    │
+    ▼
+Model Training
+    │
+    ├── Logistic Regression
+    ├── Decision Tree
+    └── Random Forest
+    │
+    ▼
+Model Evaluation
+    │
+    ▼
+Best Model Selection
+```
+
+---
+
+## Model Development
+
+The following machine learning models were evaluated:
+
+- Logistic Regression
+- Decision Tree
+- Random Forest
+
+The models were compared using classification metrics, and the best-performing model was selected after hyperparameter tuning with GridSearchCV.
+
+---
+
+## Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming language |
+| Pandas | Data manipulation |
+| NumPy | Numerical analysis |
+| Matplotlib | Data visualization |
+| Scikit-learn | Machine learning |
+
+---
+
+## Skills Demonstrated
+
+- Data Cleaning
+- Exploratory Data Analysis
+- Feature Engineering
+- Classification Models
+- Model Evaluation
+- Hyperparameter Tuning
+- Machine Learning
+- Python
+
+---
+
+## Repository Structure
+
+```text
+customer-retention-prediction
+│
+├── README.md
+├── synthetic_customer_data.csv
+└── prediccion_retorno_clientes.ipynb
+```
+
+---
 
 ## Results
-- Best model: Logistic Regression  
-- Accuracy: 100% (test set, limited dataset)
 
-The confusion matrix showed perfect classification on the available data.
+- Best model: Logistic Regression
+- Test accuracy: 100%
+- The confusion matrix showed perfect classification on the available dataset.
+
+---
 
 ## Limitations
-The dataset is small and simplified, so results may not generalize well to real-world scenarios.
 
-## Tech Stack
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- Scikit-learn  
+- The dataset is relatively small.
+- Results may not generalize to real-world scenarios.
+- Additional customer variables could improve model performance.
 
-## Project Structure
-data.csv
-notebook.ipynb
-README.md
+---
 
-## How to Run
-1. Open the notebook
-2. Run all cells
+## Key Outcome
+
+This project demonstrates a complete machine learning workflow, from data preparation and model training to evaluation and model selection using Python and Scikit-learn.
