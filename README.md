@@ -29,8 +29,6 @@ The dataset contains customer information used to predict whether a customer wil
 | `marketing_engaged` | Customer response to marketing campaigns |
 | `gender` | Customer gender |
 
-> **Note:** The analysis notebook is written in Spanish because this project was developed for an academic context in Mexico.
-
 ---
 
 ## Solution Workflow
@@ -109,7 +107,7 @@ customer-retention-prediction
 ├── synthetic_customer_data.csv
 └── prediccion_retorno_clientes.ipynb
 ```
-
+> **Note:** The analysis notebook is written in Spanish because this project was developed for an academic context in Mexico.
 ---
 
 ## Results
